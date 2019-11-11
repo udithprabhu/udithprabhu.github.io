@@ -554,13 +554,13 @@ body {
       rgba(10, 10, 10, 0.3),
       rgb(10, 10, 10, 1)
     ),
-    url("Software Developer");
+    url("https://images.unsplash.com/photo-1557277770-baf0ca74f908?w=1634");
   --background-background: linear-gradient(
       0deg,
       rgba(10, 10, 10, 1),
       rgba(10, 10, 10, 0.6)
     ),
-    url("Software Developer") center center fixed;
+    url("https://images.unsplash.com/photo-1557277770-baf0ca74f908?w=1634") center center fixed;
   --height: 50vh;
 }
 
@@ -591,6 +591,6 @@ body {
         rgba(10, 10, 10, 1),
         rgba(10, 10, 10, 0)
       ),
-      url("Software Developer") !important;
+      url("https://images.unsplash.com/photo-1557277770-baf0ca74f908?w=1634") !important;
   }
 }

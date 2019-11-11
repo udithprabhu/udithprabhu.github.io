@@ -8,11 +8,7 @@
   "includeFork": true,
   "theme": "dark.css",
   "types": [
-   "owner"
-  ],
-  "twitter": null,
-  "linkedin": "udithprabhu",
-  "medium": null,
-  "dribbble": null
+   "all"
+  ]
  }
 ]

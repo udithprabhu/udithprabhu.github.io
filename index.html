@@ -1,181 +1,135 @@
-<!DOCTYPE html><html lang="en"><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>udithprabhu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/magic-grid/dist/magic-grid.min.js"></script>
-    <link rel="stylesheet" href="index.css">
-  <link rel="icon" href="https://avatars3.githubusercontent.com/u/24357568?v=4" type="image/png"></head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins|Roboto&display=swap" rel="stylesheet">    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>Test</title>
+  </head>
   <body>
-    <div id="loading">
-      <div id="spinner"></div>
-    </div>
-    <div id="profile">
-      <div id="profile_img" style="background: url(https://avatars3.githubusercontent.com/u/24357568?v=4) center;"></div>
-      <div id="username"><span style="display:block;">Udith Prabhu</span><a href="https://github.com/udithprabhu">@udithprabhu</a></div>
-      <div id="userbio" style="display: none;">undefined</div>
-      <div id="about">
-                <span style="display:none;"><i class="fas fa-users"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-envelope"></i> &nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-link"></i> &nbsp; <a href=""></a></span>
-                <span style="display:none;"><i class="fas fa-map-marker-alt"></i> &nbsp;&nbsp; null</span>
-                <span style="display:none;"><i class="fas fa-user-tie"></i> &nbsp;&nbsp; Available for hire</span>
-                <div class="socials">
-                <span style="display:none !important;"><a href="https://www.twitter.com/undefined" target="_blank" class="socials"><i class="fab fa-twitter"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.dribbble.com/undefined" target="_blank" class="socials"><i class="fab fa-dribbble"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.linkedin.com/in/undefined/" target="_blank" class="socials"><i class="fab fa-linkedin-in"></i></a></span>
-                <span style="display:none !important;"><a href="https://www.medium.com/@undefined/" target="_blank" class="socials"><i class="fab fa-medium-m"></i></a></span>
+    <div class="main-container">
+        <div class="side-bar">
+            <div class="side-bar-content">
+                <div class="avatar-container" onclick="window.location.href = 'https://github.com/udithprabhu';">
+                    <img class="avatar clickable no-highlight" src="https://avatars3.githubusercontent.com/u/24357568?v=4">
                 </div>
+                <div class="username clickable no-highlight" onclick="window.location.href = 'https://github.com/udithprabhu';" >
+                    @udithprabhu
                 </div>
-    </div>
-    <div id="display">
-      <div id="work">
-        <h1>Work.</h1>
-        <div class="projects" id="work_section">
-                        <a href="https://github.com/udithprabhu/random-word-gen" target="_blank">
-                        <section>
-                            <div class="section_title">random-word-gen</div>
-                            <div class="about_section">
-                            <span style="display:block;">Random word generator in Angular</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/udithprabhu/temporary-file-storage" target="_blank">
-                        <section>
-                            <div class="section_title">temporary-file-storage</div>
-                            <div class="about_section">
-                            <span style="display:block;">Wrapper around git to allow non-critcal file storage in a GitHub public repository</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; TypeScript</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <!-- <a href="https://github.com/udithprabhu/udithprabhu.github.io" target="_blank">
-                        <section>
-                            <div class="section_title">udithprabhu.github.io</div>
-                            <div class="about_section">
-                            <span style="display:none;">undefined</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; CSS</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-			</a> --> </div>
-      </div>
-      <div id="forks" style="display: block;">
-        <h1>Forks.</h1>
-        <div class="projects" id="forks_section">
-                        <a href="https://github.com/udithprabhu/scripts-ubuntu-debian" target="_blank">
-                        <section>
-                            <div class="section_title">scripts-ubuntu-debian</div>
-                            <div class="about_section">
-                            <span style="display:block;">Scripts for Ubuntu/Debian</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Shell</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a>
-                        <a href="https://github.com/udithprabhu/script" target="_blank">
-                        <section>
-                            <div class="section_title">script</div>
-                            <div class="about_section">
-                            <span style="display:block;">Making it easy to write shell-like scripts in Go</span>
-                            </div>
-                            <div class="bottom_section">
-                                <span style="display:inline-block;"><i class="fas fa-code"></i>&nbsp; Go</span>
-                                <span><i class="fas fa-star"></i>&nbsp; 0</span>
-                                <span><i class="fas fa-code-branch"></i>&nbsp; 0</span>
-                            </div>
-                        </section>
-                        </a></div>
-      </div>
-      <div id="blog_section">
-        <h1>Blog.</h1>
-        <div id="blogs"></div>
-      </div>
-      <div id="footer">
-        <a href="https://github.com/imfunniee" target="_blank">made on earth by a human</a>
-      </div>
-    </div>
-    <script type="text/javascript">
-      setTimeout(function() {
-        document.getElementById("loading").classList.add("animated");
-        document.getElementById("loading").classList.add("fadeOut");
-        setTimeout(function() {
-          document.getElementById("loading").classList.remove("animated");
-          document.getElementById("loading").classList.remove("fadeOut");
-          document.getElementById("loading").style.display = "none";
-        }, 800);
-      }, 1500);
-      $.getJSON("blog.json", function(blog) {
-        blog = blog || [];
-        if (blog.length == 0) {
-          return (document.getElementById("blog_section").style.display =
-            "none");
-        }
-        for (var i = 0; i < blog.length; i++) {
-          $("#blogs").append(`
-            <a href="./blog/${blog[i].url_title}/" target="_blank">
-                <section>
-                    <img src="./blog/${blog[i].url_title}/${blog[i].top_image}">
-                    <div class="blog_container">
-                        <div class="section_title">${blog[i].title}</div>
-                        <div class="about_section">
-                            ${blog[i].sub_title}
+                <div class="social">
+                    
+                    <i class="fa fa-linkedin social-icon" aria-hidden="true" onclick="window.location.href = 'https://www.linkedin.com/in/udithprabhu/';"></i>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="repo-container">
+            <div class="repo-container-header">MY WORKS</div>
+            <div class="owner-repo-container">
+                
+                <div class="repo-details no-highlight" onclick="window.location.href = 'https://github.com/udithprabhu/personal-page-creator';">
+                    <div class="repo-header">personal-page-creator</div>
+                    <div class="repo-desc">
+                        Python script to create customizable website intended for GitHub pages
+                    </div>
+                    <div class="repo-stats">
+                        <div class="repo-language repo-stat-individual">
+                            <i class="fa fa-code" aria-hidden="true">&nbsp;Python </i>
+                        </div>
+                        <div class="repo-forks repo-stat-individual">
+                            <i class="fa fa-code-fork" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                        <div class="repo-stars repo-stat-individual">
+                            <i class="fa fa-star" aria-hidden="true">&nbsp;0</i>
                         </div>
                     </div>
-                </section>
-            </a>
-            `);
-        }
-      }).fail(function() {
-        return (document.getElementById("blog_section").style.display = "none");
-      });
-    </script>
-
-    <script>
-      const magicProjectsGrid = new MagicGrid({
-        container: "#work_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      const magicForksGrid = new MagicGrid({
-        container: "#forks_section",
-        animate: false,
-        gutter: 30, // default gutter size
-        static: true,
-        useMin: false,
-        maxColumns: 2,
-        useTransform: true
-      });
-
-      $("document").ready(() => {
-        magicProjectsGrid.listen();
-        magicForksGrid.listen();
-      });
-    </script>
-  
-
-</body></html>
+                </div>
+                
+                <div class="repo-details no-highlight" onclick="window.location.href = 'https://github.com/udithprabhu/random-word-gen';">
+                    <div class="repo-header">random-word-gen</div>
+                    <div class="repo-desc">
+                        Random word generator in Angular
+                    </div>
+                    <div class="repo-stats">
+                        <div class="repo-language repo-stat-individual">
+                            <i class="fa fa-code" aria-hidden="true">&nbsp;TypeScript </i>
+                        </div>
+                        <div class="repo-forks repo-stat-individual">
+                            <i class="fa fa-code-fork" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                        <div class="repo-stars repo-stat-individual">
+                            <i class="fa fa-star" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="repo-details no-highlight" onclick="window.location.href = 'https://github.com/udithprabhu/temporary-file-storage';">
+                    <div class="repo-header">temporary-file-storage</div>
+                    <div class="repo-desc">
+                        Wrapper around git to allow non-critcal file storage in a GitHub public repository
+                    </div>
+                    <div class="repo-stats">
+                        <div class="repo-language repo-stat-individual">
+                            <i class="fa fa-code" aria-hidden="true">&nbsp;TypeScript </i>
+                        </div>
+                        <div class="repo-forks repo-stat-individual">
+                            <i class="fa fa-code-fork" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                        <div class="repo-stars repo-stat-individual">
+                            <i class="fa fa-star" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="repo-container-header">MY FORKS</div>
+            <div class="owner-repo-container">
+                
+                <div class="repo-details no-highlight" onclick="window.location.href = 'https://github.com/udithprabhu/script';">
+                    <div class="repo-header">script</div>
+                    <div class="repo-desc">
+                        Making it easy to write shell-like scripts in Go
+                    </div>
+                    <div class="repo-stats">
+                        <div class="repo-language repo-stat-individual">
+                            <i class="fa fa-code" aria-hidden="true">&nbsp;Go </i>
+                        </div>
+                        <div class="repo-forks repo-stat-individual">
+                            <i class="fa fa-code-fork" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                        <div class="repo-stars repo-stat-individual">
+                            <i class="fa fa-star" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="repo-details no-highlight" onclick="window.location.href = 'https://github.com/udithprabhu/scripts-ubuntu-debian';">
+                    <div class="repo-header">scripts-ubuntu-debian</div>
+                    <div class="repo-desc">
+                        Scripts for Ubuntu/Debian
+                    </div>
+                    <div class="repo-stats">
+                        <div class="repo-language repo-stat-individual">
+                            <i class="fa fa-code" aria-hidden="true">&nbsp;Shell </i>
+                        </div>
+                        <div class="repo-forks repo-stat-individual">
+                            <i class="fa fa-code-fork" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                        <div class="repo-stars repo-stat-individual">
+                            <i class="fa fa-star" aria-hidden="true">&nbsp;0</i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

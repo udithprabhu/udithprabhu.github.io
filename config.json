@@ -1,14 +1,10 @@
-[
- {
-  "username": "udithprabhu",
-  "name": "Udith Prabhu",
-  "userimg": "https://avatars3.githubusercontent.com/u/24357568?v=4",
-  "sort": "created",
-  "order": "asc",
-  "includeFork": true,
-  "theme": "dark.css",
-  "types": [
-   "all"
-  ]
- }
-]
+{
+	"username": "udithprabhu",
+	"social": {
+		"linkedin":"udithprabhu"
+	},
+	"excluded": [
+		"udithprabhu.github.io"
+	],
+	"side_background": "http://getwallpapers.com/wallpaper/full/6/d/2/1113196-large-cool-space-background-wallpapers-1920x1200-ipad-retina.jpg"
+}
